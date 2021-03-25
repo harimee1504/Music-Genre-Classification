@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Genre Classification</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+  </head>
+  <body>
+    <section>
+      <header><h1>MUSIC GENRE CLASSIFICATION</h1></header>
+      <main>
+        <div class="content">
+          <div class="uploads"> 
+            <form action="/upload" id="myform" method="POST" enctype=multipart/form-data>
+              <input type="file" hidden="hidden" name="file" id="file" />
+              <span id="custom-msg">No file chosen, yet.</span>
+              <button type="button" id="upload-button">Upload File</button>
+            </form>
+            <input type="submit" value="CLASSIFY" class="sub" form="myform">
+          </div>
+          <div class="about">
+            <h2>ABOUT</h2>
+            <h3>Our Project is to classify Music Genre using Deep Learning approach in Python.</h3>
+            <h3>It is used for Music Recommendation and Search Engine Optimization.</h3>
+            <div class="links">
+              <a href="../static/documents/abstract.pdf"target="_blank">ABSTRACT</a>
+              <a href="../static/documents/Base paper.pdf"target="_blank">BASE PAPER</a>
+              <a href="../static/documents/report.pdf"target="_blank">REPORT</a>
+              <a href="../static/documents/presantation.pptx"target="_blank">PRESENTATION</a>
+            </div>
+          </div>
+      </div>
+      <div class="images"><img src="../static/Images/home.png" ></div>
+    </main>
+    <footer><h1>PROJECT DONE BY HARIKRISHNAN P</h1></footer>       
+    </section>
+    <script type="text/javascript">
+      const fileBtn = document.getElementById("file");
+      const customBtn = document.getElementById("upload-button");
+      const customTxt = document.getElementById("custom-msg");
+      customBtn.addEventListener("click", function(){
+        fileBtn.click();
+      });
+      fileBtn.addEventListener("change",function(){
+        if (fileBtn.value) {
+          customTxt.innerHTML = fileBtn.value.match(
+            /[\/\\]([\w\d\s\.\-\(\)]+)$/
+          )[1]
+        }else {
+          customTxt.innerHTML = "No file uploaded, yet.";
+        }
+      });
+    </script>
+  </body>
+</html>

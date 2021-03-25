@@ -1,0 +1,123 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+section {
+  height: 100vh;
+  background: #282828;
+  color: #e6e7ee;
+}
+header {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3vh;
+  border-bottom: 2px solid #e6e7ee;
+}
+main {
+  display: flex;
+  height: 80vh;
+  .content {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    .uploads {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 20%;
+      width: 100%;
+      height: 60%;
+      #upload-button {
+        padding: 10px;
+        color: #fff;
+        background: #008cba;
+        border: 2px solid #008cba;
+        border-radius: 5px;
+        cursor: pointer;
+        outline: 0;
+      }
+      form {
+        display: flex;
+        padding: 5px;
+        width: 80%;
+        align-items: center;
+        color: #282828;
+        background: #fff;
+        text-align: right;
+        justify-content: space-between;
+        border: 2px solid #008cba;
+        span {
+          margin-left: 10px;
+        }
+      }
+      .sub {
+        width: 130px;
+        padding: 10px;
+        text-align: center;
+        font-size: 14px;
+        border-radius: 5px;
+        color: #e6e7ee;
+        text-decoration: none;
+        background: #008cba;
+        margin-right: 3vh;
+        margin-top: 5vh;
+      }
+    }
+    .about {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 40%;
+      h2 {
+        margin-left: 15px;
+        font-size: 20px;
+      }
+      h3 {
+        margin-top: 2%;
+        margin-left: 5%;
+        font-size: 2vw;
+        font-size: 18px;
+      }
+      .links {
+        display: flex;
+        margin-top: 5%;
+        margin-left: 5%;
+        a {
+          width: 130px;
+          padding: 10px;
+          text-align: center;
+          font-size: 14px;
+          border-radius: 5px;
+          color: #e6e7ee;
+          text-decoration: none;
+          background: #008cba;
+          margin-right: 3vh;
+        }
+      }
+    }
+  }
+  .images {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 80%;
+      height: 90%;
+    }
+  }
+}
+footer {
+  height: 10vh;
+  display: flex;
+  border-top: 2px solid #e6e7ee;
+  justify-content: center;
+  align-items: center;
+  font-size: 2vh;
+}

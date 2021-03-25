@@ -1,0 +1,155 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+section {
+  height: 100vh;
+  background: #282828;
+  color: #e6e7ee;
+}
+
+header {
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 3vh;
+  border-bottom: 2px solid #e6e7ee;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80vh;
+}
+
+main .feature {
+  width: 50%;
+  height: 100%;
+}
+
+main .feature .line {
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px;
+  padding-bottom: 0px;
+}
+
+main .feature .line img {
+  width: 50%;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+main .feature .line1 {
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px;
+  padding-top: 0px;
+}
+
+main .feature .line1 img {
+  width: 50%;
+  margin-right: 5px;
+}
+
+main .result {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  height: 100%;
+  padding: 5px;
+}
+
+main .result img {
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-top: 2px solid #e6e7ee;
+}
+
+footer .back,
+footer .out {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 3vh;
+}
+
+footer .back h2,
+footer .out h2 {
+  margin-left: 10px;
+}
+
+footer .button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #008cba;
+  border: none;
+  color: #e6e7ee;
+  text-align: center;
+  font-size: 2vh;
+  padding: 15px;
+  width: 25vh;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+footer .button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+footer .button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+footer .button:hover span {
+  padding-right: 25px;
+}
+
+footer .button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/*# sourceMappingURL=result.css.map */

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Genre Classification</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../static/css/result.css" />
+  </head>
+  <body>
+    <section>
+      <header><h1>MUSIC GENRE CLASSIFICATION</h1></header>
+      <main>
+        <div class="feature">
+          <div class="line">
+            <img src="{{a}}" />
+            <img src="{{b}}" />
+          </div>
+          <div class="line1">
+            <img src="{{c}}" />
+            <img src="{{d}}" />
+          </div>
+        </div>
+        <div class="result">
+          <img src="{{resultimg}}" />
+        </div>
+      </main>
+      <footer>
+        <div class="back">
+          <a href="/" class="button"><span>BACK TO HOME </span></a>
+        </div>
+        <div class="out">
+          <h1>{{result}} with accuracy of {{accuracy}}%</h1>
+        </div>
+      </footer>
+    </section>
+  </body>
+</html>
